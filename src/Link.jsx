@@ -1,6 +1,5 @@
 export default function Link(props) {
-    // console.log(props);
-    return <a href={props.href} className="ui-link">{props.children}</a>
-
-};
-
+    const { children, href } = props;
+    
+    return <a className="ui-link" href={href}> {children} </a>;
+}
