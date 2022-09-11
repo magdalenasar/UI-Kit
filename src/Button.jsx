@@ -1,5 +1,5 @@
 export default function Button(props) {
-    const { children, type, disabled } = props;
+    const { children, ...rest } = props;
     
-    return <button className="ui-button" type={type} disabled={disabled}>{children}</button>;
+    return <button className="ui-button" {...rest} >{children}</button>;
 }
