@@ -1,5 +1,8 @@
+import clsx from 'clsx';
+
 export default function Button(props) {
-    const { children, ...rest } = props;
+    const { children,className, ...rest } = props;
+    const classes = clsx("ui-button", className);
     
-    return <button className="ui-button" {...rest} >{children}</button>;
+    return <button className={classes} {...rest} >{children}</button>;
 }

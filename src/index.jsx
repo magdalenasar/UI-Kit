@@ -8,7 +8,7 @@ import Input from './Input';
 function App() {
   return (
     <>
-        <Container theme="dark">
+        <Container className='main' theme="dark">
             { /* It doesn't matter what you write here. This is where you can use the components that you've defined. It's important, however, to import them in this file. */ }
             <Link href="https://react-tutorial.app">React Tutorial</Link>
             <Button disabled={true} tabIndex="2">Login</Button>
